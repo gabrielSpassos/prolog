@@ -1,0 +1,12 @@
+dinheiroDisponivel(fernanda, 1000).
+dinheiroDisponivel(gabriel, 5000).
+dinheiroDisponivel(jose, 10000).
+idade(gabriel, 21).
+idade(fernanda, 19).
+idade(jose, 15).
+
+maiorDeIdade(X) :- idade(X,Z), Z > 18.
+aptoParaCNH(X) :- dinheiroDisponivel(X,Y), Y > 2000 , idade(X,Z), Z > 18. 
+
+
+
